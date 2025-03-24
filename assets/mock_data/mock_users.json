@@ -1,0 +1,33 @@
+// File: models/mock_user.dart
+class MockUser {
+  final String id;
+  final String name;
+  final String profilePicture;
+  final String experienceLevel;
+  final String gym;
+
+  MockUser({
+  required this.id,
+  required this.name,
+  required this.profilePicture,
+  required this.experienceLevel,
+  required this.gym,
+});
+
+static List<MockUser> sampleData = [
+MockUser(
+id: '1',
+name: 'Emily Smith',
+profilePicture: 'https://randomuser.me/api/portraits/women/44.jpg',
+experienceLevel: 'Green (1-3 yrs)',
+gym: 'MyFitness - Tallinn',
+),
+MockUser(
+id: '2',
+name: 'John Doe',
+profilePicture: 'https://randomuser.me/api/portraits/men/11.jpg',
+experienceLevel: 'Blue (3-6 yrs)',
+gym: 'Gym! - Tartu',
+),
+];
+}
